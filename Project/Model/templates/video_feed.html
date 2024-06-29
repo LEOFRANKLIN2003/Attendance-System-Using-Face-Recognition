@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Feed - {{ name }}</title>
+</head>
+<body>
+    <h2>Video Feed - {{ name }}</h2>
+    <div class="container">
+        <img src="{{ url_for('video_feed_viewer', name=name) }}" width="640" height="480">
+    </div>
+</body>
+</html>
